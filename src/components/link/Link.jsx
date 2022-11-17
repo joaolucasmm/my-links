@@ -1,10 +1,9 @@
 import React from 'react';
 
-function Link({link, name, icon}) {
+function Link({link, name, icon, alt_text}) {
     return(
         <a className='link-box' href={link}>
-            {console.log(link, " ; ", name)}
-            <img src={icon} className='image' />
+            <img src={icon} className='image' alt={alt_text}/>
             <div className='link'>{name}</div>
         </a>
     );
