@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/style/style.css';
+import Link from "./components/link/Link";
+
+import globe from './assets/images/globe.svg';
+import twitch from './assets/images/twitch.svg';
+import insta from './assets/images/instagram.svg';
+import github from './assets/images/github.svg';
+import Header from './components/header/Header';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<Header />
+			<div className='container'>
+				<Link name="Portfolio" link="https://joaolucasmm.github.io/portfolio" icon={globe}/>
+				<Link name="Github" link="https://github.com/joaolucasmm/" icon={github}/>
+				<Link name="Instagram" link="https://instagr.am/sir_joey" icon={insta}/>
+				<Link name="Twitch" link="https://twitch.tv/joaoluzao" icon={twitch}/>
+			</div>
+		</>
+  	);
 }
 
 export default App;

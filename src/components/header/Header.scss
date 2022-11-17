@@ -1,0 +1,23 @@
+@import '../UI/variables.scss';
+
+.header {
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background: rgba(1,1,1,0.1);
+    h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .header{
+        height: 30vh;
+    }
+}

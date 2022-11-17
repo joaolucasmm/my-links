@@ -1,0 +1,36 @@
+@import '../UI/variables.scss';
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .link-box {
+        display: flex;
+        width: 50vw;
+        height: 3em;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 16px;
+        background-color: rgba(1, 1, 1, 0.08);
+        color: black;
+        text-decoration: none;
+        margin: 1.5em;
+        transition: transform .2s;
+        .link {
+            padding-left: 2em;
+        }
+    }
+    .link-box:hover {
+        transform: scale(1.03);
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .container{
+        height: 70vh;
+    }
+}
