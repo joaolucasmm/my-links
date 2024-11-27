@@ -19,7 +19,7 @@ function App() {
 				<Link name="Instagram" link="https://instagr.am/sir_joey" icon={insta} alt_text="Icone Insta"/>
 				<Link name="Linkedin" link="https://www.linkedin.com/in/jo%C3%A3o-lucas-miranda-menegasso/" 
 					icon={linkedin} alt_text="Icone Linkedin"/>
-				<Link name="Twitch" link="https://twitch.tv/joaoluzao" icon={twitch} alt_text="Icone Twitch"/>
+						/*<Link name="Twitch" link="https://twitch.tv/joaoluzao" icon={twitch} alt_text="Icone Twitch"/>*/
 			</div>
 		</>
   	);
